@@ -1,43 +1,86 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My first web page</title>
+        <title font-size: large>My first web page</title>
         <style>
             html * {
-                font-size: x-large;
               line-height: 1.25;
-              color: #2020131;
-              font-family: Garamond mono, monospace;
+              font-family: Optima;
+            }
+
+            .image-cropper {
+                width: 220px;
+                height: 300px;
+                position: relative;
+                overflow: hidden;
+                border-radius: 50%;
+            }
+
+            img {
+                display:inline-flexs;
+                margin-left: auto;
+                margin-right: auto ;
+                height: 100%;
+                width: auto;
+            }
+
+            .center-image { 
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+            } 
+
+
+
+            .ui-bar-a img{
+                vertical-align: text-top;
+            }
+            .text-section {  
+                font-size: 17px;
+                width:80%;
+                display: table-cell;
+            }
+            .img-section {  
+                width:20%;
+                display: table-cell;
             }
           </style>
+ 
     </head>
 
 
-<body style="background-color:#EAF2F8;">
+<body>
 
 
-<div class = "container">
-    <h1>Sirig Gurung</h1></div>
-    <img src = "images/headshot.jpg" width="300" height="250" align = "right">
-    <p>Hello Welcome! My name is Sirig and I am from Kathmandu, Nepal. 
-        I currently work as a predoctoral research fellow at Stanford Institute 
-        for Economic Policy and Research (SIEPR) under <a href = "http://stanford.edu/~memorten/Melanie_Morten.html">Melanie Morten</a> and <a href = "https://jweinstein.sites.stanford.edu/">Jeremy Weinstein</a>. 
-        My primary interests lie in Development, Migration and Network Theory.</p>
-    <p>Previously, I was lucky to work as a research assistant to <a href = "https://sites.google.com/site/davinchor/?pli=1">Davin Chor</a> at the Tuck School of Business, conducting research on Trade and the Political Economy. I graduated from Amherst College in 2021 with a B.A. in Economics and Mathematics. 
-        Here is <a href = "pdf files/SirigGurung_CV.pdf">my CV</a> (last updated Jan 2023).</p> 
-        
-    <p>You can reach me at sirigg (at) stanford (dot) edu.</p>
-    
+    <div class = "text-section">
+        <h1 font-size: x-large>Sirig Gurung</h1>
+        <p>Hello! My name is Sirig and I am from Kathmandu, Nepal. 
+            I currently work as a predoctoral research fellow at Stanford Institute 
+            for Economic Policy and Research (SIEPR). I work <a href = "http://stanford.edu/~memorten/Melanie_Morten.html">Melanie Morten</a> and <a href = "https://jweinstein.sites.stanford.edu/">Jeremy Weinstein</a> on large-scale RCTs that encourage temporary migration in Mexico and Niger. 
+            My primary interests lie in Development, Migration and Networks.</p>
 
+        <p>Previously, I was lucky to work as a research assistant to <a href = "https://sites.google.com/site/davinchor/?pli=1">Davin Chor</a> at the Tuck School of Business, conducting research on Trade and the Political Economy. I graduated from Amherst College in 2021 with a B.A. in Economics and Mathematics. </p> 
+            
+        <p>You can find my CV <a href = "pdf files/SirigGurung_CV.pdf">here</a> (last updated Jan 2023) and can reach me at sirigg (at) stanford (dot) edu.</p>
 
-    <h2> Research in Progress</h2>
-    <ul style="list-style:none;">
-        <li><strong>"The Great Firewall and Knowledge Diffusion"</strong><br>
-         with <a href = "https://www.andrewbbernard.com/">Andy Bernard</a>, <a href = "http://www.estherboler.com/">Esther Bøler</a>, <a href = "https://sites.google.com/site/davinchor/?pli=1">Davin Chor</a> and Wei Lu</li>
-    </ul>
-    
-    <ul>This is a list of things I want on the webpage
-    </ul>
+        <h2 font-size: x-large> Research in Progress</h2>
+        <ul style="list-style:none;">
+            <li><strong>"The Great Firewall and Knowledge Diffusion"</strong><br>
+            with <a href = "https://www.andrewbbernard.com/">Andy Bernard</a>, <a href = "http://www.estherboler.com/">Esther Bøler</a>, <a href = "https://sites.google.com/site/davinchor/?pli=1">Davin Chor</a> and Wei Lu</li>
+        </ul>
+    </div>
+
+    <div class = "img-section">
+        <div class="ui-bar-a">
+            <div class="center-image">
+                <div class = "image-cropper">
+                    <img src = "images/random.jpg" class = "rounded">
+                </div>   
+            </div>
+        </div>
+
+    </div>
+
 </body>
 
 </html>
