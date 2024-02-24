@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title font-size: large>My first web page</title>
+        <title font-size: large>Sirig Gurung - Personal Website</title>
         <style>
             html * {
               line-height: 1.25;
@@ -9,11 +9,11 @@
             }
 
             .image-cropper {
-                width: 250px;
-                height: 250px;
+                width: 350px;
+                height: 350px;
                 position: relative;
                 overflow: hidden;
-                border-radius: 60%;
+                border-radius: 100%;
             }
 
             img {
@@ -35,19 +35,26 @@
             }
             .text-section {  
                 font-size: 17px;
-                width:60%;
+                width:65%;
                 display: table-cell;
             }
             .img-section {  
-                width:30%;
+                width:35%;
                 display: table-cell;
             }
 
             a {
                 text-decoration: none;
                 color: blue;
-             }
-            .button-55 {
+            }
+
+            a.ext-link:hover  {
+                background-color: pink;
+                text-shadow: 0px 0px 0.5px;
+            }
+
+
+            button.button-55 {
                 align-self: center;
                 background-color: #fff;
                 background-image: none;
@@ -75,7 +82,9 @@
                 border-top-right-radius: 15px 225px;
                 user-select: none;
                 -webkit-user-select: none;
-                touch-action: manipulation;
+                touch-action: manipulation;    
+                position: relative;
+                left: 35%;
             }
 
             .button-55:hover {
@@ -90,20 +99,39 @@
                 font-size:40px;
                 text-align: center;
             }
+
+            p.desc {
+                margin-left: 30px;
+                margin-top: 5px;
+            }
           </style>
  
     </head>
 
     <body style="background-color:hsla(13, 100%, 86%, 0.815)">
+
+        <div class="text-section">
             <h1>Sirig Gurung</h1>
-                <button class="button-55" role="button"><span class="text"><a href="./index.html" style="color:black">Home</a></span></button>
-                <button class="button-55" role="button"><span class="text"><a href="./research.html" style="color:black">Research</a></span></button>
-                <button class="button-55" role="button"><span class="text"><a href="./pdf files/SirigGurung_CV.pdf" style="color:black">CV (Jan '23)</a></span></button>
-    <h2 font-size: x-large> Research in Progress</h2>
-    <ul style="list-style:none;">
-        <li><strong>"The Great Firewall and Knowledge Diffusion"</strong><br>
-        with <a href = "https://www.andrewbbernard.com/">Andrew Bernard</a>, <a href = "http://www.estherboler.com/">Esther Bøler</a>, <a href = "https://sites.google.com/site/davinchor/?pli=1">Davin Chor</a> and Wei Lu</li>
-    </ul>
+                <a href="./index.html"><button class="button-55" role="button"><span class="text">Home</button></a>
+                <a href="./research.html"><button class="button-55" role="button"><span class="text">Research</span></button></a>
+                <a href="./pdf files/SirigGurung_CV.pdf"></a><button class="button-55" role="button"><span class="text">CV (Jan '23)</span></button></a>
+            
+            <h2 font-size: x-large> Research in Progress</h2>
+            <ul style="list-style:none;">
+            <li><strong>"The Great Firewall and Knowledge Diffusion"</strong><br>
+                with <a href = "https://www.andrewbbernard.com/" class="ext-link">Andrew Bernard</a>, <a href = "http://www.estherboler.com/" class="ext-link">Esther Bøler</a>, <a href = "https://sites.google.com/site/davinchor/?pli=1" class="ext-link">Davin Chor</a> and Wei Lu
+                <p class = "desc"> Has large-scale censorship in China affected the diffusion on knowledge in economics? 
+                    We study the effect of the Great Firewall of China's (GFC) on citations of papers by faculty who host research on google sites. Data collected by scraping Google Scholar and faculty personal websites. 
+                    As hypothesized, our results suggest that the GFC negatively affected citations for papers with at least one author with a google site and that the effects persisted - stay tuned for draft!
+                </p>
+            </li>
+        </div>
+
+        <div class="img-section">
+
+        </div>
+
+
 
 </body>
 
